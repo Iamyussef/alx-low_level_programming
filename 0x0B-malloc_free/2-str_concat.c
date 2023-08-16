@@ -11,10 +11,18 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int size1 = strlen(s1);
-	int size2 = strlen(s2);
-	int size3 = size1 + size2 + 1;
-	char *m = (char *)malloc((size1 + size2) * sizeof(char) + 1);
+	 int size1, size2, size3;
+	 char *m;
+
+		if (s1 == NULL)
+			s1 = "\0";
+		if (s2 == NULL)
+			s2 = "\0";
+
+	 size1 = strlen(s1);
+	 size2 = strlen(s2);
+	 size3 = size1 + size2 + 1;
+	 m = (char *)malloc((size1 + size2) * sizeof(char) + 1);
 		if (m == NULL)
 		{
 			return (0);
