@@ -33,5 +33,5 @@ char *str_concat(char *s1, char *s2)
 			strcat(m, s2);
 		}
 		m[size3] = '\0';
-		return (0);
+		return (m);
 }
