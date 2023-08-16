@@ -16,7 +16,7 @@ char *create_array(unsigned int size, char c)
 		{
 			return (0);
 		}
-	for (int i = 0; i < size; i++)
+	for (int i = 0; i <= size; i++)
 	{
 		ptr[i] = c;
 	}
