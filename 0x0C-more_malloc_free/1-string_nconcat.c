@@ -6,20 +6,19 @@
  * @s1: pointer to first string.
  * @s2: pointer to 2nd string.
  * @n: Number of bytes from n2 to concatenate.
- *Return:Pointer to space in memory containing concatenated string.
+ * Return:Pointer to space in memory containing concatenated string.
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str;
-	int i, j, s1_size, s2_size;
-		if (s1 == NULL)
+	unsigned int i, j, s1_size, s2_size;
 
-			s1 = "";
 
-		if (s2 == NULL)
-
-			s2 = "";
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
 	for (s1_size = 0; s1[s1_size] != '\0'; s1_size++)
 		;
@@ -27,10 +26,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		;
 	str = malloc(s1_size + n + 1);
 		if (str == NULL)
-		{
-			return (NULL);
-		}
 
+			return (NULL);
 		for (i = 0; s1[i] != '\0'; i++)
 			str[i] = s1[i];
 		for (j = 0; j < n; j++)
@@ -38,7 +35,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			str[i] = s2[j];
 			i++;
 		}
-
 	str[i] = '\0';
 	return (str);
 }
