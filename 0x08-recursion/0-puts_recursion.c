@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _puts_recursion - a function to print charachters recursively
+ * _puts_recursion - prints a string, followed by a new line
  * @s: a pointer to a charachter to be printed
  * return void
  */
@@ -11,7 +11,7 @@ void _puts_recursion(char *s)
 {
 	if (*s == '\0')
 	{
-		return;
+		_putchar('\n');
 	}
 	else
 	{
