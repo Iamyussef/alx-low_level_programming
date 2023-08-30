@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * _puts_recursion - a function to printf the charachter passed
- * @s - a charchter to print
- * return 0 (success)
+ * _puts_recursion - a function to print charachters recursively
+ * @s: a pointer to a charachter to be printed
+ * return void
  */
 
 void _puts_recursion(char *s)
@@ -18,9 +18,4 @@ void _puts_recursion(char *s)
 		_putchar(*s);
 	}
 	_puts_recursion(s + 1);
-}
-int main(void)
-{
-	_puts_recursion("Puts with recursion");
-	return (0);
 }
