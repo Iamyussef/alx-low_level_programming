@@ -10,7 +10,7 @@ int square(int x, int y);
 
 int _sqrt_recursion(int n)
 {
-	square(n, 1);
+	return (square(n, 1));
 }
 /**
  * square - find square root
@@ -32,6 +32,6 @@ int square(int x, int y)
 	}
 	else
 	{
-		square(x, y + 1);
+		return (square(x, y + 1));
 	}
 }
