@@ -10,10 +10,10 @@
 int main(int argc, char *argv[] __attribute__((unused)))
 {
 	int i = 1;
-		for (i; i < argc; i++)
+		while (i < argc)
 		{
+			i++;
 		}
-
 	printf("%d\n", i - 1);
 	return (0);
 }
