@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
 	int i;
 	int sum = 0;
 	int amount;
+	int a = 0;
 	int coins[5] = {25, 10, 5, 2, 1};
 		if (argc == 1)
 		{
@@ -28,7 +29,7 @@ int main(int argc, char *argv[])
 	{
 		for (i = 0; i < 5; i++)
 		{
-			for (int a = 0; coins[i] <=  amount; a++)
+			for (a = 0; coins[i] <=  amount; a++)
 			{
 				amount -= coins[i];
 				sum++;
