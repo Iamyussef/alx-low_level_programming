@@ -34,10 +34,6 @@ int main(int argc, char *argv[])
 				sum++;
 
 			}
-			if (amount == 0)
-			{
-				break;
-			}
 		}
 		 printf("%d\n", sum);
 	}
