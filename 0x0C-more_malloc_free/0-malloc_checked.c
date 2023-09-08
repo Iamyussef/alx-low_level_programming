@@ -10,10 +10,6 @@
 void *malloc_checked(unsigned int b)
 {
 	int *n;
-		if (b == 0)
-		{
-			return (NULL);
-		}
 	n = malloc(b);
 		if (n == NULL)
 		{
