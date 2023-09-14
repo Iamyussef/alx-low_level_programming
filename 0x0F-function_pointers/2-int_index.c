@@ -2,7 +2,7 @@
 #include <stddef.h>
 
 /**
- * int_index -  searches for an integer 
+ * int_index -  searches for an integer
  * @array: the int array
  * @size: the array size
  * @cmp: the compare function
