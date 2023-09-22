@@ -3,7 +3,7 @@
 
 /**
  * list_len - calculates the number of elements in a linked list_t list.
- * @h; list_t
+ * @h: pointer to first node
  * Return: number of elements in a linked list_t list.
  */
 
