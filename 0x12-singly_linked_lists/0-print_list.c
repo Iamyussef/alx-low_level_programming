@@ -10,7 +10,7 @@
 
 size_t print_list(const list_t *h)
 {
-	list_t *current = h;
+	const list_t *current = h;
 	unsigned int i = 0;
 
 		while (current != NULL)
