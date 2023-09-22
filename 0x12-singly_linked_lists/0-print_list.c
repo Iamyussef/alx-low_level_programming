@@ -10,10 +10,10 @@
 
 size_t print_list(const list_t *h)
 {
-	if (h == NULL)
-		printf("NULL");
 	const list_t *current = h;
 	unsigned int i = 0;
+		if (h == NULL)
+                	printf("NULL");
 
 		while (current != NULL)
 		{
