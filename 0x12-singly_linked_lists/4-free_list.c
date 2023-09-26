@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stddef.h>
-
+#include "lists.h"
 /**
  * free_list - frees the memory allocated
  * @head: a pointer to the memory to free
