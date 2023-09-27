@@ -7,20 +7,19 @@
  *  @head: a pointer to a pointer to the first node.
  *  Return: void
  */
-
 void free_listint2(listint_t **head)
 {
-	listint_t *ptr, *temp;
+	listint_t *node, *temp;
 
-	if (*head == NULL)
+	if (!head)
 		return;
 
-	ptr = *head;
-		while (ptr != NULL)
-		{
-			temp = ptr->next;
-			free(ptr);
-			ptr = temp;
-		}
+	node = *head;
+	while (node)
+	{
+		temp = node;
+		node = node->next;
+		free(temp);
+	}
 	*head = NULL;
 }
