@@ -8,8 +8,6 @@
 
 void print_binary(unsigned long int n)
 {
-	void print_binary(unsigned long int n)
-{
 	int m = sizeof(n) * 8;
 	int type = 0;
 
