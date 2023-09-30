@@ -8,12 +8,12 @@
 
 void print_binary(unsigned long int n)
 {
-	int m = sizeof(n) * 8;
+	int m = 64;
 	int type = 0;
 
 	while (m)
 	{
-		if (n & 1L << --bit)
+		if (n & 1L << --m)
 		{
 			_putchar('1');
 			type++;
