@@ -20,11 +20,11 @@ int clear_bit(unsigned long int *n, unsigned int index)
 	p = index;
 		while (p > 0)
 		{
-			i *= 2;
+			j *= 2;
 			p--;
 		}
 	if ((*n >> index) & 1)
-		*n -= i;
+		*n -= j;
 
 	return (1);
 }
