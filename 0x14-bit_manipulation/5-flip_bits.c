@@ -1,6 +1,5 @@
 #include <unistd.h>
 #include "main.h"
-#include <sys/type.h>
 
 /**
  * flip_bits - returns the number of bits you would
